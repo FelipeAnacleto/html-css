@@ -22,7 +22,7 @@
 }
 
 * {
-    margin: 0px;
+    margin: -2px;
     padding: 0px;
 }
 
@@ -39,7 +39,7 @@ a.externo::after {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    min-height: 150px;
+    min-height: 110px;
     text-align: center;
     padding-top: 40px;
 }
@@ -87,11 +87,11 @@ nav > a:hover {
 }
 
 main {
-    min-width: 300px;
+    min-width: 120px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 13px;
