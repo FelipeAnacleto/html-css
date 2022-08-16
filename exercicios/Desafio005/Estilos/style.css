@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --font-Open-sans: 'Open Sans', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-padrao: Arial, Helvetica, sans-serif;
+
+    --cor1: #65e2d9;
+    --cor2: #339ecc;
+    --cor3: #ff4242;
+    --cor4: #1c2431;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body  {
+    box-sizing: border-box;
+    Font-size: 14px;
+    background-color: var(--cor4);
+    
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+nav a {
+    color: hsl(0, 0%, 100%);
+    float: right;
+    text-decoration: none;
+    display: flex;
+    padding: 14px 16px;
+    
+}
+
+nav a:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: var(--font-raleway);
+    font-weight: bolder;
+    color: white;
+
+}
+
+header > .intro {
+    width: 100%;
+    padding-top: 10%;
+    margin: auto;
+}
+
+.intro > p a {
+    color: #D6D58E;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 13px 70px;
+    display: inline-flex;
+
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+picture.segurança {
+    width: 100px;
+    display: inline-block;
+    
+
+
+}
+
+picture.links-de-cima {
+    display: inline-block;
+
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+ main.produtividade {
+    width: 100px;
+    height: 100px;
+
+}
+
+footer {
+    width: 100vw;
+    height: 100vw;
+    margin: auto;
+    text-align: center;
+}
+
