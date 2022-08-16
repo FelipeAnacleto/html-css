@@ -15,8 +15,9 @@
     
 }
 
-* {
+html {
     margin: 0;
+    height: 0;
     padding: 0;
 
 }
@@ -77,41 +78,65 @@ header > .intro {
 }
 
 main {
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    width: 800px;
+    height: 500px;
     margin: auto;
-    text-align: center;
+    padding: 100px;
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: left right;
+    background-size: cover;
 }
 
-picture.segurança {
-    width: 100px;
-    display: inline-block;
-    
-
-
-}
-
-picture.links-de-cima {
-    display: inline-block;
-
-}
-
-div {
+.principal {
+    height: 500px;
     width: 100%;
-    height: 100%;
-    display: inline-block;
+    margin: auto;
+
 }
 
- main.produtividade {
-    width: 100px;
-    height: 100px;
+.meio-cima {
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+picture {
+    padding: 20px;
+    color: white;
+}
+
+picture > a {
+    text-decoration: none;
+}
+
+.links-baixo {
+    color: rgb(255, 255, 255);
+    float: top;
+    text-decoration: none;
+    display: flex;
+    padding: 14px 16px;
+}
+
+.links-baixo > p {
+    color: rgb(255, 255, 255);
+    float: right;
+    text-decoration: none;
+    display: flex;
+    padding: 14px 16px;
 }
 
 footer {
-    width: 100vw;
-    height: 100vw;
-    margin: auto;
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: left right;
+    background-size: cover;
+    width: 100%;
+    margin: 90px;
     text-align: center;
-}
+    font-family: var(--font-Open-sans);
+    font-weight: bolder;
+    color: white;
+    align-items: center;
 
+}
