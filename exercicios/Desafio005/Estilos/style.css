@@ -8,135 +8,112 @@
     --font-raleway: 'Raleway', sans-serif;
     --font-padrao: Arial, Helvetica, sans-serif;
 
-    --cor1: #65e2d9;
+    --cor1: #59d6be;
     --cor2: #339ecc;
     --cor3: #ff4242;
-    --cor4: #1c2431;
-    
+    --cor4: #1a212e;;
 }
 
-html {
+* {
     margin: 0;
-    height: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
-body  {
-    box-sizing: border-box;
-    Font-size: 14px;
-    background-color: var(--cor4);
-    
+body {
+    background: var(--cor4);
+    color: white;
+    font-family: var(--font-Open-sans);
 }
 
 nav {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    background-repeat: no-repeat;
-}
-
-nav a {
-    color: hsl(0, 0%, 100%);
-    float: right;
-    text-decoration: none;
+    width: 85%;
+    height: 15vh;
+    margin: auto;
     display: flex;
-    padding: 14px 16px;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a:hover {
-    transition: 0.5s;
+.logo {
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+}
+
+ul.navbar {
+    list-style: none;
+    display: flex;
+}
+
+ul.navbar li {
+    width: 100px
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navbar li a:hover {
     text-decoration: underline;
+
 }
 
-header {
-    width: 100%;
-    height: 100%;
+.section-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+}
+
+.intro-desc {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.illustration {
+    width: 470px;
+    margin-bottom: 30px
+}
+
+.intro-desc h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
     font-family: var(--font-raleway);
-    font-weight: bolder;
-    color: white;
-
 }
 
-header > .intro {
-    width: 100%;
-    padding-top: 10%;
-    margin: auto;
+.intro-desc p {
+    width: 500px;
+    line-height: 1.6rem;
+    font-weight: 700px;
+    margin: 0 auto 30px;
 }
 
-.intro > p a {
-    color: #D6D58E;
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
-    text-decoration: none;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 13px 70px;
-    display: inline-flex;
-
-}
-
-main {
-    align-items: center;
-    width: 800px;
-    height: 500px;
-    margin: auto;
-    padding: 100px;
-    background-image: url('../images/bg-curvy-desktop.svg');
-    background-position: left right;
-    background-size: cover;
-}
-
-.principal {
-    height: 500px;
-    width: 100%;
-    margin: auto;
-
-}
-
-.meio-cima {
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-picture {
-    padding: 20px;
+#btn {
+    width: 250px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: var(--cor1);
     color: white;
 }
 
-picture > a {
+#btn a {
     text-decoration: none;
-}
-
-.links-baixo {
-    color: rgb(255, 255, 255);
-    float: top;
-    text-decoration: none;
-    display: flex;
-    padding: 14px 16px;
-}
-
-.links-baixo > p {
-    color: rgb(255, 255, 255);
-    float: right;
-    text-decoration: none;
-    display: flex;
-    padding: 14px 16px;
-}
-
-footer {
-    background-image: url('../images/bg-curvy-desktop.svg');
-    background-position: left right;
-    background-size: cover;
-    width: 100%;
-    margin: 90px;
-    text-align: center;
-    font-family: var(--font-Open-sans);
-    font-weight: bolder;
     color: white;
-    align-items: center;
-
 }
+
+.curvy-bg {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+
+
+
