@@ -11,12 +11,14 @@
     --cor1: #59d6be;
     --cor2: #339ecc;
     --cor3: #ff4242;
-    --cor4: #1a212e;;
+    --cor4: #1a212e;
+    --cor5: #181f2a;
+    --cor6: #202b3c;
+    --cor7: #0b1523;
 }
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -115,5 +117,506 @@ ul.navbar li a:hover {
     z-index: -1;
 }
 
+.section-2 {
+    width: 100%;
+    height: auto;
+    background: var(--cor5);
+    position: relative;
+    top: -210px;
+    z-index: -1;  
+}
+
+.services {
+    width: 70%;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.service-wrapper {
+    margin: 30px;
+}
+
+.service-wrapper img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.service-desc {
+    width: 400px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.service-desc h2 {
+    font-size: 1.2rem;
+    font-family: var(--font-raleway);
+    margin-bottom: 10px;
+
+}
+/* A seção 3 começa aqui */
+
+.section-3 img {
+    width: 550px;
+    height: auto;
+}
+
+.section-3 {
+    width: 85%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.section-3-desc {
+    width: 550px;
+}
+
+.section-3-desc h1 {
+    font-size: 2rem;
+    width: 300px;
+    margin-bottom: 15px;
+    font-family: var(--font-raleway);
+}
+
+.section-3-desc p {
+    margin-bottom: 30px;
+}
+
+.section-3-desc a {
+    color: var(--cor1);
+    margin-right: 7px;
+}
+/* A seção testimonial começa aqui */
+
+.testimonial-section {
+    width: 90%;
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial-section::after {
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: 185px;
+    left: 130px
+
+}
+
+.testimonial-card {
+    width: 385px;
+    height: 200px;
+    background: var(--cor6);
+    padding: 25px 15px;
+    box-shadow: 2px 2px 3px var(--cor5);
+    z-index: 1;
+}
+
+.testimonial-desc {
+    width: 345px;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.profile-wrapper {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.profile {
+    width: 43px;
+    height: 50px;
+    background-image: url(../images/profile-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-desc span {
+    font-size: 14px;
+    color: white;
+}
+
+.profile-2 {
+    background-image: url(../images/profile-2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-3 {
+    background-image: url(../images/profile-3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.sign-up-section {
+    width: 60%;
+    height: 30vh;
+    margin: auto;
+    background-color: var(--cor6);
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    top: 80px;
+    box-shadow: 3px 3px 4px black;
+}
+
+.sign-up-desc h1 {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input[type="email"] {
+    width: 500px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    margin-right: 25px;
+}
+
+input {
+    width: 500px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    margin-right: 25px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background: var(--cor1);
+    border-radius: 25px;    
+}
+
+footer {
+    width: 100%;
+    height: 60vh;
+    background: var(--cor7);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+footer .logo {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.footer-body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    width: 350px;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    line-height: 2rem;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.fas {
+    margin-right: 15px;
+}
+
+.fab {
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+a.fab {
+    text-decoration: none;
+    color: white;
+}
+
+.fab:hover {
+    color: var(--cor1);
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 10vh;
+    background: var(--cor6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.footer-bottom span {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.footer-bottom span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    border: 30px;
+    border-radius: 20px;
+    color: #1D7373;
+}
+
+.social-links img {
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    background-color: white;
+}
+
+.social-links img {
+    cursor: pointer;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// consulta de mídia para dispositivos pequenos */
+@media screen and (max-width: 375px) {
+    nav {
+        width: 90%;
+    }
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+    ul.navbar li {
+        width: 70px;
+        margin-right: 5px
+    }
+    ul.navbar li:nth-child(2) {
+        width: 50px
+    }
+    ul.navbar li:nth-child(3) {
+        width: 50px
+    }
+    .section-1 {
+        width: 300px;
+        margin: auto;
+    }
+    .illustration {
+        width: 300px;
+    }
+    .intro-desc {
+        width: 300px;
+    }
+    .intro-desc h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .intro-desc p {
+        width: 318px;
+        line-height: 1.5rem;  
+    } 
+    #btn {
+        width: 200px;
+    }
+    .curvy-bg {
+        display: none;
+    }
+    /* A consulta de mídia para a seção começa aqui */
+
+
+
+    /* A consulta de mídia para a seção 2 começa aqui */
+
+    .services {
+        width: 95%;
+        margin: 250px auto 0;
+
+    }
+    
+    .service-desc {
+        width: 300px;
+        margin: auto;
+
+    }
+
+    .service-desc h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .service-desc p {
+        font-size: 14px;
+        width: 200px;
+        margin: auto;
+    }
+
+    /* A consulta de mídia da seção 3 começa aqui */
+
+    .section-3 {
+        margin-top: 0;
+    }
+
+    .section-3 img {
+        width: 300px;
+    }
+
+    .section-3-desc h1 {
+        font-size: 1rem;
+        margin: 15px 0;
+    }
+
+    .section-3-desc p {
+        margin-bottom: 30px;
+        font-size: 14px;
+
+    }
+    /* mídia testimonial seção */
+
+    .testimonial-section {
+        width: 90%;
+        min-height: 100vh;
+        margin: 100px auto 0;
+    }
+
+    .testimonial-section::after {
+        top: -30px;
+        left: -10px;
+    }
+
+    .testimonial-card {
+        width: 350px;
+        height: 230px;
+        margin-bottom: 25px;
+    }
+
+    .testimonial-desc {
+        width: 310px;
+
+    }
+    /* Consulta de mídia para a seção de inscrição */
+
+    .sign-up-section {
+        width: 90%;
+        height: 60vh;
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+
+    .sign-up-desc {
+        width: 300px;   
+    }
+
+    .sign-up-desc h1 {
+        margin-bottom: 15px;
+        font-size: 1.2rem; 
+    }
+
+    input[type="email"] {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+        width: 300px;
+    
+
+    }
+
+    /* Consulta de mídia para a seção de rodapé */
+
+    footer {
+        height: 120vh;
+    }
+
+    footer .logo {
+        width: 120px;
+        top: 80px;
+        left: 30px;
+    }
+
+    .footer-body {
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .location {
+        width: 300px;
+    }
+
+    .footer-body p {
+        font-size: 14px;
+        margin-bottom: 35px;
+        line-height: 1.2rem;
+    }
+
+    .about-us {
+        margin: 30px 0;
+    }
+
+    .fab {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        height: 8vh;
+        font-size: 0.875rem;
+    }
+
+    .social-links img {
+        display: inline;
+        width: 30px;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+}
