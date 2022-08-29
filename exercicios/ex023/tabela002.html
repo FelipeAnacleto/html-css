@@ -8,12 +8,12 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            justify-content: center;
         }
 
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         .tamanho {
@@ -38,6 +38,12 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
        
