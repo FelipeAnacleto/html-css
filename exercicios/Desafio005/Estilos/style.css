@@ -118,6 +118,7 @@ ul.navbar li a:hover {
 }
 
 .section-2 {
+    align-items: center;
     width: 100%;
     height: auto;
     background: var(--cor5);
@@ -214,6 +215,7 @@ ul.navbar li a:hover {
     left: 130px
 
 }
+
 
 .testimonial-card {
     width: 385px;
@@ -429,9 +431,9 @@ a.fab {
 
 /*
 // consulta de mídia para dispositivos pequenos */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
     nav {
-        width: 90%;
+        width: 80%;
     }
     .logo {
         width: 70px;
@@ -439,7 +441,6 @@ a.fab {
     }
     ul.navbar li {
         width: 70px;
-        margin-right: 5px
     }
     ul.navbar li:nth-child(2) {
         width: 50px
@@ -529,8 +530,8 @@ a.fab {
     }
 
     .testimonial-section::after {
-        top: -30px;
-        left: -10px;
+        top: -15px;
+        left: -2px;
     }
 
     .testimonial-card {
@@ -564,11 +565,14 @@ a.fab {
 
     input[type="email"] {
         width: 300px;
-        margin-bottom: 15px;
+        height: auto;
+        margin: 15px auto;
     }
 
     input[type="submit"] {
         width: 300px;
+        height: auto;
+        margin: 15px auto;
     
 
     }
@@ -614,9 +618,10 @@ a.fab {
     }
 
     .social-links img {
-        display: inline;
+        display: inline-flex;
         width: 30px;
-        margin-top: 30px;
-        margin-left: 5px;
+        margin-top: 150px;
+        float: bottom ;
+
     }
 }
