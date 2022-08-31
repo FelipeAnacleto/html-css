@@ -25,29 +25,29 @@ header {
     text-align: center;
 }
 
-header > h1 {
+header>h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font2);
     font-size: 10vw;
 }
 
-header > p {
+header>p {
     padding-bottom: 50px;
     font-size: 4vw;
     text-align: center;
     font-family: var(--font1);
-    
+
 }
 
 .links {
     text-align: right;
     padding: 20px;
     max-width: auto;
-    
+
 }
 
-.felipe > a {
+.felipe>a {
     color: #D6D58E;
     background-image: linear-gradient(to top, #042940, #005C53);
     text-decoration: none;
@@ -56,7 +56,7 @@ header > p {
     padding: 15px;
 }
 
-.felipe abbr > img {
+.felipe abbr>img {
     width: 30px;
     text-align: center;
 }
@@ -66,7 +66,7 @@ nav a {
     background-color: rgb(158, 62, 187);
     text-decoration: none;
     font-weight: bolder;
-    margin-left: 5px ;
+    margin-left: 5px;
     border-radius: 15px;
     padding: 12px;
 }
@@ -86,7 +86,7 @@ section {
     font-size: 4.5vw;
 }
 
-section > p {
+section>p {
     padding-bottom: 2em
 }
 
@@ -104,7 +104,7 @@ section.imagem {
     background-attachment: fixed;
 }
 
-section.imagem > p {
+section.imagem>p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
@@ -129,6 +129,5 @@ footer {
     background-color: black;
     color: white;
     padding: 20px;
-    text-align: center;  
+    text-align: center;
 }
-
