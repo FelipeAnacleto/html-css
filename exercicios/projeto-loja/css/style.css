@@ -5,13 +5,42 @@
     font-family: Helvetica;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+/* Dark Theme */
+.dark,
+.dark header {
+    background-image: linear-gradient(to right, #012E40, #025159, #038C8C, #03A696);
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon {
+    display: none;
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+
 /* Cabeçalho */
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: #F77AAA;
     color: #fff;
     padding: 15px;
     text-align: center;
-    border-bottom: 3px solid #FFA2C5;
+    border-bottom: 3px solid #60BFE5;
 }
 
 /* Grid de Produtos */
